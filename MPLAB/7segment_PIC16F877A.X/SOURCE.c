@@ -22,7 +22,7 @@
 
 // #pragma config statements should precede project file includes.
 // Use project enums instead of #define for ON and OFF.
-#define _XTAL_FREQ 20000000  //define frequency to 8MHz
+#define _XTAL_FREQ 20000000  //define frequency to 20MHz
 #include <xc.h>
 void main(void) {
 
@@ -34,7 +34,7 @@ void main(void) {
           for(int i= 0; i< 10; ++i) // loop to display 0-9
           {
               PORTC = seg_code[i]; 
-             __delay_ms(500);
+             __delay_ms(200);
           }
             
         
